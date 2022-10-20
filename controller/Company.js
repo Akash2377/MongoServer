@@ -1,7 +1,7 @@
 import express, { Router } from "express";
 import companyModel from "../Model/Company.model.js";
 const companyRouter = express.Router();
-companyRouter.get("/company", async (req, res) => {
+companyRouter.get("/search", async (req, res) => {
   const { searchCompany } = req.query;
   let queryC = {};
   if (searchCompany === undefined) {
