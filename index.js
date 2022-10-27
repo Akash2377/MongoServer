@@ -5,7 +5,8 @@ import isSignUpRouter from "./controller/SignUp.js";
 import isSignInRouter from "./controller/SignIn.js";
 import companyRouter from "./controller/Company.js";
 import applyRouter from "./controller/Apply.js";
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
+
 const app = express();
 app.use(cors());
 app.use(express.json());
